@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  }
+
+html, body{
+ font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  color: #363636;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+}
+
+/* navbars */
+
+.navbar-top {
+  display: none;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: auto;
+}
+
+
+/* Logo och länkar/hamburgare */
+
+#logo img {
+  width: 8rem;
+}
+
+.hamburger-menu {
+  font-size: 2rem;
+  color:#2baaec ;
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger-menu :active {
+  color: #25e6c8;
+}
+
+/* lägg till Navbar för länkar, när hamburgaren ryker */
+
+.navbar-main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: none;
+}
+
+
+
+
+/* showcase content */
+
+.showcase {
+  background-color: #DEDEDE;
+  height: 20rem; 
+  width: 100%;
+}
+
+.showcase-content {
+display: flex;
+justify-content: center;
+}
+
+#silhuett img {
+margin-top: 1.3rem;
+margin-right: 4rem;
+width: 16rem;
+display: none;
+}
+
+.showcase-text {
+  margin-top: 3rem;
+  width: 18rem;
+  text-align: center;
+
+ 
+}
+.showcase-text {
+  margin: 1 0 0 0;
+}
+
+.showcase-text h2 {
+  color: #363636;
+}
+
+.showcase-text p {
+  font-size: 0.5rem;
+  color: #626262;
+}
+
+#about-btn {
+  background-color: #25e6c8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  height: 1.7rem;
+  width: 6.5rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#about-btn:hover {
+  background-color: #2baaec;
+}
+
+/* About us Section */
+
+#about-us {
+  display: flex;
+  height: 21rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#about-us-text {
+  width: 24rem;
+  text-align: center;
+}
+
+
+#about-us-rubrik {
+ 
+  border-bottom: 3px solid #25E6C8;
+}
+
+#about-us-rubrik h2 {
+  line-height: 0.3rem;
+  
+}
+
+#about-us-rubrik p {
+  display: inline-block;
+  color: #2BAAEC;
+  line-height: 0.3rem;
+}
+
+.about-us-small {
+  margin-top: 1rem;
+  color: #626262;
+  font-size: 0.6rem;
+}
+
+#about-us-numbers {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+#about-us-numbers h2 {
+  color: #2baaec;
+}
+
+#about-us-numbers h5 {
+  font-size: 0.6rem;
+  margin-top: -1rem;
+  color: #626262;
+}
+
+
+#about-us-silhouette img {
+  height: 20rem;
+  margin-right: 3rem;
+  display: none;
+}
+
+
+/* Our Services Section */
+
+.service-bg {
+  background-color: #F7F7F7;
+  height: 92rem;
+}
+
+#service-rubrik {
+  display: flex;
+  width: 12rem;
+  height: 4.5rem;
+  justify-content: center;   
+  border-bottom: 2px solid #25E6C8;
+  
+}
+
+
+
+
+/* CSS GRID SERVICES */
+
+
+.service-grid {
+  display: grid;
+  margin-top: 1rem;
+  justify-content: center;
+  grid-gap: 18px;
+  grid-template-rows: auto;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  width: 14rem;
+  height: 13rem;
+  border-radius: 8px;
+}
+
+.service-icon-and-bg {
+  display: flex;
+  height: 6.5rem;
+  justify-content: center;
+}
+
+.service-icon-bg {
+  margin-top: 2rem;
+  background-color: #25E6C8;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;  
+  cursor: pointer;
+}
+
+.service-icon-bg:hover {
+background-color: #2baaec;
+}
+
+.service-icon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 2rem;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.service-text h4 {
+  font-size: 0.8rem;
+}
+
+.service-text p {
+  width: 10.5rem;
+  color: #626262;
+  text-align: center;
+  margin-top: -0.6rem;
+  font-size: 0.6rem;
+}
+
+.dental-implants {
+  width: 1.2rem;
+}
+
+.effective-protection {
+  width: 1.7rem;
+}
+
+
+
+/* appointment Section */
+
+#appointment-bg {
+  background-color: #2ba8ecd2;
+  height: 7rem;
+}
+
+.appointment-content {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
+
+
+.appointment-content h3 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.appointment-content button {
+  height: 1.8rem;
+  width: 9rem;
+  align-self: center;
+  color: #2baaec;
+  font-size: 0.6rem;
+  font-weight: 750;
+  border: none;
+  border-radius: 6px;
+  
+}
+
+/* footer */
+
+.footer-bg {
+  display: flex;
+  justify-content: center;
+  background-color: #2baaec;
+  height: 3rem;
+  padding-top: 0; 
+}
+
+#footer p {
+  font-size: 0.5rem;
+  color: #F3FBFF;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+/* media querys */
+
+@media (min-width: 480px) {
+
+  .container {
+    max-width: 460px;
+  }
+
+  
+}
+    
+
+ 
+
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 720px;
+  }
+
+ /* navbar */
+
+
+ 
+  #logo img {
+    width: 8rem;
+    margin-left: 2rem;
+  }
+ 
+
+
+  .navbar-top {
+    display: block;
+    border-bottom: 0.5px solid #707070;
+  }
+  
+  .navbar-top .container{
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-clock {
+    margin-left: 4rem;
+    font-size: 0.6rem;
+    color: #626262;
+  
+  }
+  
+  .clock {
+    color: #2BAAEC;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .navbar-social {
+    margin-right: 4rem;
+  }
+
+  .navbar-social a {
+   color: #2BAAEC;
+   margin-left:1rem;
+   font-size: 0.5rem;
+   }
+
+   .navbar-social a:hover {
+     color: #25E6C8;
+   }
+ 
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    margin-right: 3.5rem;
+  }
+
+.navbar-links a {
+  font-family: 'Roboto Slab', serif;
+  color: #363636;
+  text-decoration: none;
+  margin-left: 1rem;
+  
+}
+
+
+/* Showcase content */
+
+#silhuett img {
+  margin-top: 1.3rem;
+  margin-right: 4rem;
+  width: 16rem;
+  display: block;
+  }
+  
+  .showcase-text {
+    margin-top: 3rem;
+    width: 18rem;
+    text-align: left;
+  
+   
+  }
+
+
+  /* about us Content */
+
+  #about-us-silhouette img {
+    height: 20rem;
+    margin-right: 3rem;
+    display: block;
+  }
+
+  #about-us-text {
+    width: 24rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  #about-us-numbers {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+  }
+
+
+/* SERVICES BACKGROUND */
+
+.service-bg {
+  background-color: #F7F7F7;
+  height: 50rem;
+}
+
+  /* CSS GRID SERVICES */
+
+  .service-grid {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    grid-gap: 18px;
+    grid-template-columns: auto auto;
+  }
+
+/* Appointment content */
+
+#appointment-bg {
+  background-color: #2ba8ecd2;
+  height: 5rem;
+}
+
+.appointment-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.appointment-content h3 {  
+  margin-right: 5rem;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+.appointment-content button {
+ margin-left: 9rem;
+  margin-top: 1.5rem;
+}
+
+
+}
+
+@media (min-width: 992px) {
+ 
+  .container {
+    max-width: 960px;
+  }
+
+   /* CSS GRID SERVICES */
+
+   .service-bg {
+    background-color: #F7F7F7;
+    height: 39rem;
+  }
+
+   .service-grid {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    grid-gap: 18px;
+    grid-template-columns: auto auto auto;
+  }
+
+}
+
+@media (min-width: 1200px) {
+ 
+  .container {
+    max-width: 1140px;
+  }
+}

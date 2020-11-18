@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida</title>
+
+    <script src="https://kit.fontawesome.com/b060d22c47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <!-- top menu inte för mobil -->
+<nav class="navbar-top ">
+    <div class="container">
+        <div class="nav-clock">
+            <i class="clock far fa-clock"></i>
+            Working hours: Monday – Friday: 9:00 – 18:00
+    
+        </div>
+        <div class="navbar-social">
+            
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a> 
+
+        </div>
+    </div>
+
+</nav>
+
+
+    <!-- main menu -->
+
+    <nav class="navbar-main">
+        <div class="container">
+            <a href="#">
+                <div id="logo">
+                    <img src="images/Logo.svg" alt="">
+                </div>
+            </a>
+
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-links">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+
+        </div>
+        
+    </nav>
+
+    <!-- showcase (siluett ej med i mobil) -->
+
+    <section class="showcase">
+        <div class="showcase-content container">
+            <div id="silhuett">
+                <img src="images/Showcase.svg" alt="">
+
+            </div>
+            
+               
+
+            <div class="showcase-text">
+                <h2>Modern technologies ensure safety</h2>
+                <p>Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
+                <a href="#"><button id="about-btn">About our clinic</button></a>
+            </div>
+       </div>
+    </section>
+
+
+
+    <!-- about us-sidan -->
+
+    <section>
+        <div id="about-us" class="container">
+            <div id="about-us-text">
+                <div id="about-us-rubrik">
+                    <h2>Dentail<p>Clinic</p> is a modern medical and dental clinic</h2>
+                </div>
+                <p class="about-us-small">The DentialClinic Center located in the city of Stockholm is one of the most modern dentistry centers in Sweden. It was created for demanding patients who expect the highest quality of services combined with comfort and a pleasant atmosphere.</p>
+                <p class="about-us-small"> The highest-class dental equipment possessed by the DentialClinic Center enables complicated procedures to be carried out. In our dental practice we combine passion, technology and quality. We strive to fulfill your dreams of a wonderful smile.</p>
+                
+                <div id="about-us-numbers">
+                    <div id="happy-patients">
+                        <h2>9 850</h2>
+                        <h5>Happy Patients</h5>
+                    </div>
+                    <div id="performed-treatments">
+                        <h2>12 890</h2>
+                        <h5>Performed treatments</h5>
+                    </div>
+                    <div id="open-clinic">
+                        <h2>24/7</h2>
+                        <h5>Open clinic</h5>
+                    </div>
+                </div>
+            
+            </div>
+            <div id="about-us-silhouette">
+                <img src="images/AUsilhouette.svg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services - CSS-Grid!! -->
+
+    <section class="service-bg">
+
+        <div id="service-rubrik" class="container">
+            <h3>Our services</h3>
+        </div>
+
+        <div id="our-services" class="container">
+            <div class="service-grid">
+
+                <div id="tooth-inspection" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                         <img class="service-icon" src="images/tooth_icon.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="service-text">
+                        <h4>Tooth inspection</h4>
+                        <p>Comprehensive review of the mouth and detection of broken teeth and other threats.</p>
+                    </div>
+                </div>
+                   
+                    
+                
+
+                <div id="tooth-removal" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/tooth_removal.svg" alt="">
+                        </div>
+                    </div> 
+                    <div class="service-text">
+                        <h4>Tooth removal</h4>
+                        <p>Any broken tooth is a threat to the body, so this danger should be removed from the mouth.</p>
+                    </div>
+                </div>
+
+                <div id="removal-tartar" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/removal-tartar.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h4>Removal of tartar</h4>
+                        <p>Tartar is the enemy of every human being, because through his presence we have unpleasant breath.</p>
+                    </div>
+                </div>
+
+                <div id="polishing" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon" src="images/polishing.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h4>Polishing and cleaning</h4>
+                        <p>A simple and safe polishing treatment improves the health of teeth that will get a better look.</p>
+                    </div>
+                </div>
+
+                <div id="dental-implants" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div class="service-icon-bg">
+                            <img class="service-icon dental-implants" src="images/dental_implants.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h4>Dental implants</h4>
+                        <p>The best solution when you can not save a healthy tooth and you need to apply artificial solutions.</p>
+                    </div>
+                </div>
+
+                <div id="effective-protection" class="grid-item">
+                    <div class="service-icon-and-bg">
+                        <div  class="service-icon-bg">
+                            <img class="service-icon effective-protection" src="images/effective_protection.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h4>Effective protection</h4>
+                        <p>The cheapest tooth protection is their cleaning and a regular visit to the dentist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- appointment -->
+
+    <section>
+        <div id="appointment-bg">
+            
+                <div class="appointment-content" >
+                    <h3>Do not wait and make an appointment today!</h3>
+                    <button>Book an appointment</button>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-bg">
+            <div id="footer">
+                <p>&copy; 2020 DentialClinic</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
